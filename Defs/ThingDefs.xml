@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="FurnitureWithQualityBase">
+    <ThingDef ParentName="FurnitureWithQualityBase" Abstract="True">
         <defName>RPGCampaign</defName>
         <label>RPG campaign</label>
         <description>A custom campaign for a tabletop RPG.</description>
@@ -16,8 +16,6 @@
         </graphicData>
         <fillPercent>0.15</fillPercent>
         <altitudeLayer>MoteOverhead</altitudeLayer>
-        <hasInteractionCell>true</hasInteractionCell>
-        <interactionCellOffset>(0,0,1)</interactionCellOffset>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
         <designationCategory>Joy</designationCategory>
@@ -27,6 +25,7 @@
             <li>BuildingsJoy</li>
         </thingCategories>
         <tradeTags>
+            <li>Exotic</li>
         </tradeTags>
         <building>
             <joyKind>Gaming_Cerebral</joyKind>
@@ -34,7 +33,7 @@
             <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
         </building>
         <clearBuildingArea>false</clearBuildingArea>
-        <size>(1,1)</size>
+        <size>(2,1)</size>
         <researchPrerequisites>
             <li>TabletopRPGs</li>
         </researchPrerequisites>
@@ -45,17 +44,52 @@
             <li>Stony</li>
         </stuffCategories>
         <costStuffCount>50</costStuffCount>
+        <comps>
+            <li Class="BoardgameDev.RpgCampaignCompProperties"/>
+        </comps>
+        <uiIconOffset>(0,0.3)</uiIconOffset>
+    </ThingDef>
+
+    <ThingDef ParentName="RPGCampaign">
+        <defName>ShortRPGCampaign</defName>
+        <label>Short RPG campaign</label>
+        <description>A short custom campaign for a tabletop RPG.</description>
         <statBases>
             <MaxHitPoints>75</MaxHitPoints>
             <Flammability>1.0</Flammability>
             <MarketValue>150</MarketValue>
             <Mass>7.5</Mass>
             <JoyGainFactor>1</JoyGainFactor>
-            <WorkToBuild>5000</WorkToBuild>
+            <WorkToBuild>15000</WorkToBuild>
         </statBases>
-        <comps>
-        </comps>
-        <uiIconOffset>(0,0.3)</uiIconOffset>
+    </ThingDef>
+
+    <ThingDef ParentName="RPGCampaign">
+        <defName>MediumRPGCampaign</defName>
+        <label>Medium RPG campaign</label>
+        <description>A medium-length custom campaign for a tabletop RPG.</description>
+        <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <MarketValue>150</MarketValue>
+            <Mass>7.5</Mass>
+            <JoyGainFactor>1</JoyGainFactor>
+            <WorkToBuild>40000</WorkToBuild>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="RPGCampaign">
+        <defName>LongRPGCampaign</defName>
+        <label>Long RPG campaign</label>
+        <description>A long custom campaign for a tabletop RPG.</description>
+        <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <MarketValue>150</MarketValue>
+            <Mass>7.5</Mass>
+            <JoyGainFactor>1</JoyGainFactor>
+            <WorkToBuild>100000</WorkToBuild>
+        </statBases>
     </ThingDef>
 
 </Defs>

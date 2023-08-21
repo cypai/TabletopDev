@@ -2,31 +2,40 @@
 <Defs>
 
     <ThoughtDef>
-        <defName>PlayedFunGame</defName>
+        <defName>PlayedRpgGame</defName>
         <thoughtClass>Thought_Memory</thoughtClass>
         <durationDays>1.0</durationDays>
-        <stackLimit>3</stackLimit>
-        <stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+        <stackLimit>1</stackLimit>
         <stages>
+            <li>
+                <label>played bad game</label>
+                <description>I lost horribly in an unfair game!</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
             <li>
                 <label>played ok game</label>
                 <description>That was an interesting game.</description>
                 <baseMoodEffect>1</baseMoodEffect>
             </li>
             <li>
-                <label>played good game</label>
+                <label>played decent game</label>
                 <description>That was a fun game.</description>
                 <baseMoodEffect>2</baseMoodEffect>
             </li>
             <li>
-                <label>played excellent game</label>
-                <description>That was a very fun game.</description>
+                <label>played good game</label>
+                <description>That was a pretty fun game.</description>
                 <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>played excellent game</label>
+                <description>That was a really fun game.</description>
+                <baseMoodEffect>5</baseMoodEffect>
             </li>
             <li>
                 <label>played a masterpiece</label>
                 <description>That was an incredible game!</description>
-                <baseMoodEffect>5</baseMoodEffect>
+                <baseMoodEffect>8</baseMoodEffect>
             </li>
         </stages>
     </ThoughtDef>
