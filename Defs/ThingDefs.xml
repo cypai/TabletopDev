@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="FurnitureWithQualityBase" Name="RPGCampaign" Abstract="True">
+    <ThingDef ParentName="BuildingBase" Name="RPGCampaign" Abstract="True">
         <graphicData>
             <shadowData>
                 <volume>(0.45, 0.15, 0.35)</volume>
@@ -34,15 +34,42 @@
         <researchPrerequisites>
             <li>TabletopRPGs</li>
         </researchPrerequisites>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Artistic</workSkill>
+            <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+            <effectWorking>Sculpt</effectWorking>
+            <soundWorking>Recipe_Sculpt</soundWorking>
+            <recipeUsers>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Plasteel</li>
+                    <li>Jade</li>
+                    <li>Uranium</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
         <stuffCategories>
             <li>Woody</li>
             <li>Fabric</li>
             <li>Leathery</li>
             <li>Stony</li>
         </stuffCategories>
-        <costStuffCount>50</costStuffCount>
+        <costStuffCount>20</costStuffCount>
+        <costList>
+            <WoodLog>10</WoodLog>
+        </costList>
         <comps>
-            <li Class="BoardgameDev.RpgCampaignCompProperties"/>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
         </comps>
         <uiIconOffset>(0,0.3)</uiIconOffset>
     </ThingDef>
@@ -54,11 +81,16 @@
         <statBases>
             <MaxHitPoints>75</MaxHitPoints>
             <Flammability>1.0</Flammability>
-            <MarketValue>150</MarketValue>
-            <Mass>7.5</Mass>
+            <MarketValue>80</MarketValue>
+            <Mass>1</Mass>
             <JoyGainFactor>1</JoyGainFactor>
-            <WorkToBuild>15000</WorkToBuild>
+            <WorkToMake>30000</WorkToMake>
         </statBases>
+        <comps>
+            <li Class="BoardgameDev.RpgCampaignCompProperties">
+                <sessionsPerColonist>1</sessionsPerColonist>
+            </li>
+        </comps>
     </ThingDef>
 
     <ThingDef ParentName="RPGCampaign">
@@ -69,10 +101,15 @@
             <MaxHitPoints>75</MaxHitPoints>
             <Flammability>1.0</Flammability>
             <MarketValue>150</MarketValue>
-            <Mass>7.5</Mass>
+            <Mass>1</Mass>
             <JoyGainFactor>1</JoyGainFactor>
-            <WorkToBuild>40000</WorkToBuild>
+            <WorkToMake>66000</WorkToMake>
         </statBases>
+        <comps>
+            <li Class="BoardgameDev.RpgCampaignCompProperties">
+                <sessionsPerColonist>5</sessionsPerColonist>
+            </li>
+        </comps>
     </ThingDef>
 
     <ThingDef ParentName="RPGCampaign">
@@ -82,11 +119,16 @@
         <statBases>
             <MaxHitPoints>75</MaxHitPoints>
             <Flammability>1.0</Flammability>
-            <MarketValue>150</MarketValue>
-            <Mass>7.5</Mass>
+            <MarketValue>350</MarketValue>
+            <Mass>1</Mass>
             <JoyGainFactor>1</JoyGainFactor>
-            <WorkToBuild>100000</WorkToBuild>
+            <WorkToMake>102000</WorkToMake>
         </statBases>
+        <comps>
+            <li Class="BoardgameDev.RpgCampaignCompProperties">
+                <sessionsPerColonist>10</sessionsPerColonist>
+            </li>
+        </comps>
     </ThingDef>
 
 </Defs>

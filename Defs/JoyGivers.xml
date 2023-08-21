@@ -3,7 +3,7 @@
 
     <JoyGiverDef>
         <defName>UseRPGCampaign</defName>
-        <giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
+        <giverClass>JoyGiver_WatchBuilding</giverClass>
         <baseChance>5</baseChance>
         <thingDefs>
             <li>ShortRPGCampaign</li>

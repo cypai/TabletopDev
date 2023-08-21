@@ -6,6 +6,8 @@ namespace BoardgameDev
 {
     public class RpgCampaignCompProperties : CompProperties
     {
+        public int sessionsPerColonist;
+
         public RpgCampaignCompProperties()
         {
             compClass = typeof(RpgCampaignComp);
@@ -14,25 +16,27 @@ namespace BoardgameDev
 
     public class RpgCampaignComp : ThingComp
     {
-        private int sessionsLeft = 20;
+        private int timesPlayed;
+        private bool finished;
 
-        public int SessionsLeft => sessionsLeft;
+        private RpgCampaignCompProperties Props => (RpgCampaignCompProperties)props;
 
-        public bool Finished => sessionsLeft == 0;
+        public bool Finished => finished;
 
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look(ref sessionsLeft, "sessionsLeft", 20);
+            Scribe_Values.Look(ref timesPlayed, "timesPlayed", 20);
+            Scribe_Values.Look(ref finished, "finished", false);
         }
 
-        public void Init(QualityCategory quality, int sessionsPerColonist)
+        private int SessionsLeft()
         {
             int colonists = PawnsFinder.AllMaps_FreeColonists.Count;
             int colonistsAdjusted = (int)Math.Ceiling(Math.Pow(colonists, 0.8));
 
             int qualityBonus = 1;
-            switch (quality)
+            switch (parent.TryGetComp<CompQuality>().Quality)
             {
                 case QualityCategory.Awful:
                     qualityBonus = 1;
@@ -57,12 +61,17 @@ namespace BoardgameDev
                     break;
             }
 
-            sessionsLeft = colonistsAdjusted * sessionsPerColonist * qualityBonus;
+            int totalSessions = colonistsAdjusted * Props.sessionsPerColonist * qualityBonus;
+            return totalSessions - timesPlayed;
         }
 
         public void PlayOnce()
         {
-            sessionsLeft--;
+            timesPlayed++;
+            if (SessionsLeft() == 0)
+            {
+                finished = true;
+            }
         }
 
         public override string CompInspectStringExtra()
@@ -73,7 +82,7 @@ namespace BoardgameDev
             }
             else
             {
-                return $"Sessions Left: {sessionsLeft}";
+                return $"Sessions Left: {SessionsLeft()}";
             }
         }
     }
