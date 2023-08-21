@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="FurnitureWithQualityBase" Abstract="True">
-        <defName>RPGCampaign</defName>
-        <label>RPG campaign</label>
-        <description>A custom campaign for a tabletop RPG.</description>
+    <ThingDef ParentName="FurnitureWithQualityBase" Name="RPGCampaign" Abstract="True">
         <graphicData>
             <shadowData>
                 <volume>(0.45, 0.15, 0.35)</volume>
@@ -28,7 +25,7 @@
             <li>Exotic</li>
         </tradeTags>
         <building>
-            <joyKind>Gaming_Cerebral</joyKind>
+            <joyKind>Gaming_RPG</joyKind>
             <isEdifice>false</isEdifice>
             <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
         </building>

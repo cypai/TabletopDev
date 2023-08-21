@@ -2,14 +2,14 @@
 <Defs>
 
   <JobDef>
-    <defName>PlayRpgCampaign</defName>
+    <defName>PlayRPGCampaign</defName>
     <driverClass>BoardgameDev.JobDriver_PlayRpgCampaign</driverClass>
     <reportString>playing RPG campaign.</reportString>
     <joyDuration>4000</joyDuration>
     <joyMaxParticipants>6</joyMaxParticipants>
     <joySkill>Social</joySkill>
     <joyXpPerTick>0.002</joyXpPerTick>
-    <joyKind>Gaming_Cerebral</joyKind>
+    <joyKind>Gaming_RPG</joyKind>
   </JobDef>
 
 </Defs>

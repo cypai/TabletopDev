@@ -6,9 +6,11 @@
         <giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
         <baseChance>5</baseChance>
         <thingDefs>
-            <li>RPGCampaign</li>
+            <li>ShortRPGCampaign</li>
+            <li>MediumRPGCampaign</li>
+            <li>LongRPGCampaign</li>
         </thingDefs>
-        <jobDef>UseRPGCampaign</jobDef>
+        <jobDef>PlayRPGCampaign</jobDef>
         <joyKind>Gaming_RPG</joyKind>
         <requiredCapacities>
             <li>Sight</li>
