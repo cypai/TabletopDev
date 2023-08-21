@@ -85,7 +85,7 @@
             <WorkToMake>30000</WorkToMake>
         </statBases>
         <comps>
-            <li Class="BoardgameDev.RpgCampaignCompProperties">
+            <li Class="TabletopDev.RpgCampaignCompProperties">
                 <sessionsPerColonist>1</sessionsPerColonist>
             </li>
         </comps>
@@ -104,7 +104,7 @@
             <WorkToMake>66000</WorkToMake>
         </statBases>
         <comps>
-            <li Class="BoardgameDev.RpgCampaignCompProperties">
+            <li Class="TabletopDev.RpgCampaignCompProperties">
                 <sessionsPerColonist>5</sessionsPerColonist>
             </li>
         </comps>
@@ -123,7 +123,7 @@
             <WorkToMake>102000</WorkToMake>
         </statBases>
         <comps>
-            <li Class="BoardgameDev.RpgCampaignCompProperties">
+            <li Class="TabletopDev.RpgCampaignCompProperties">
                 <sessionsPerColonist>10</sessionsPerColonist>
             </li>
         </comps>
@@ -197,7 +197,7 @@
             <WorkToMake>30000</WorkToMake>
         </statBases>
         <comps>
-            <li Class="BoardgameDev.EscapeRoomCompProperties"/>
+            <li Class="TabletopDev.EscapeRoomCompProperties"/>
         </comps>
     </ThingDef>
 </Defs>

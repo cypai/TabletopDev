@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardgameDev", "BoardgameDev.csproj", "{78C1DA58-B35D-401A-B9BE-884AFB630FD9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabletopDev", "TabletopDev.csproj", "{78C1DA58-B35D-401A-B9BE-884AFB630FD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -3,7 +3,7 @@ using Verse;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BoardgameDev
+namespace TabletopDev
 {
     public class EscapeRoomCompProperties : CompProperties
     {

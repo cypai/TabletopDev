@@ -2,7 +2,7 @@
 using Verse;
 using System;
 
-namespace BoardgameDev
+namespace TabletopDev
 {
     public class RpgCampaignCompProperties : CompProperties
     {

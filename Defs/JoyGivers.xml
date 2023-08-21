@@ -20,7 +20,7 @@
 
     <JoyGiverDef>
         <defName>UseEscapeRoom</defName>
-        <giverClass>BoardgameDev.JoyGiver_EscapeRoom</giverClass>
+        <giverClass>TabletopDev.JoyGiver_EscapeRoom</giverClass>
         <baseChance>5</baseChance>
         <thingDefs>
             <li>EscapeRoom</li>

@@ -2,7 +2,7 @@
 using Verse.AI;
 using Verse;
 
-namespace BoardgameDev
+namespace TabletopDev
 {
     public class JobDriver_PlayEscapeRoom : JobDriver_SitFacingBuilding
     {

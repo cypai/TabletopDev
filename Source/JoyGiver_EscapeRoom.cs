@@ -1,7 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace BoardgameDev
+namespace TabletopDev
 {
     public class JoyGiver_EscapeRoom : JoyGiver_WatchBuilding
     {

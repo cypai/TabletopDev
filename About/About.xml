@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 
-	<name>Boardgame Dev</name>
+	<name>Tabletop Dev</name>
     <author>pipai</author>
-    <packageId>pipai.boardgamedev</packageId>
+    <packageId>pipai.tabletopdev</packageId>
     <supportedVersions>
         <li>1.4</li>
     </supportedVersions>
     <description>
-        Develop board games with your pawns!
+        Develop tabletop games with your pawns!
 
         Pawns can now craft non-reusable games as additional recreation sources. Additionally, they provide mood bonuses, though awful games might make players angry instead.
 
@@ -21,7 +21,7 @@
 
         After the games have been played, they are no longer useful and may be deconstructed or sold. However, just like real life, making games takes a long time and don't sell for much.
 
-        Does not conflict with Tabletop Trove. Also, Tabletop Trove is more about infinitely-replayable board games and decor, and this is not meant to be a replacement for it.
+        Does not conflict with Tabletop Trove. Also, Tabletop Trove is more about infinitely-replayable games and decor, and this is not meant to be a replacement for it.
 
         New game ideas welcome, but please make sure they are consumable games. Standard board game suggestions can go to Tabletop Trove.
 

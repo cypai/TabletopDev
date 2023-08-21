@@ -3,7 +3,7 @@
 
   <JobDef>
     <defName>PlayRPGCampaign</defName>
-    <driverClass>BoardgameDev.JobDriver_PlayRpgCampaign</driverClass>
+    <driverClass>TabletopDev.JobDriver_PlayRpgCampaign</driverClass>
     <reportString>Playing RPG campaign.</reportString>
     <joyDuration>4000</joyDuration>
     <joyMaxParticipants>6</joyMaxParticipants>
@@ -14,7 +14,7 @@
 
   <JobDef>
     <defName>PlayEscapeRoom</defName>
-    <driverClass>BoardgameDev.JobDriver_PlayEscapeRoom</driverClass>
+    <driverClass>TabletopDev.JobDriver_PlayEscapeRoom</driverClass>
     <reportString>Playing escape room.</reportString>
     <joyDuration>4000</joyDuration>
     <joyMaxParticipants>6</joyMaxParticipants>
