@@ -8,7 +8,29 @@
         <li>1.4</li>
     </supportedVersions>
     <description>
-        Develop games with your pawns!
+        Develop board games with your pawns!
+
+        Pawns can now craft non-reusable games as additional recreation sources. Additionally, they provide mood bonuses, though awful games might make players angry instead.
+
+        Includes the following:
+        - RPG Campaign: Trains Social. Longer campaigns can be played more times, but take longer to make. Uses Artistic skill to make.
+        After the campaign is finished, can still be played for very minor mood boosts.
+        Minor note: Total usable sessions scales with colonists, so larger colonies can use the same campaign more often.
+
+        - Escape Room: Trains Intellectual. Can only be played once per pawn, but trains more XP to compensate. Uses Crafting skill to make.
+
+        After the games have been played, they are no longer useful and may be deconstructed or sold. However, just like real life, making games takes a long time and don't sell for much.
+
+        Does not conflict with Tabletop Trove. Also, Tabletop Trove is more about infinitely-replayable board games and decor, and this is not meant to be a replacement for it.
+
+        New game ideas welcome, but please make sure they are consumable games. Standard board game suggestions can go to Tabletop Trove.
+
+        If anyone can make better graphics, that would be highly appreciated! (I am not a graphic artist)
+
+        Possible Future Ideas:
+        - Crossword Puzzles: Low-work stackable which trains Intellectual?
+        - Coloring Books: Stackable which trains Artistic?
+        - Adding art stories from played games
 	</description>
 
 </ModMetaData>

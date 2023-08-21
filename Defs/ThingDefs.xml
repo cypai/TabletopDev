@@ -25,16 +25,11 @@
 
     <ThingDef ParentName="TabletopGame" Name="RPGCampaign" Abstract="True">
         <graphicData>
-            <shadowData>
-                <volume>(0.45, 0.15, 0.35)</volume>
-            </shadowData>
-            <texPath>Things/Building/Furniture/DMScreen</texPath>
+            <texPath>Things/Building/Furniture/RpgCampaign</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <shaderType>CutoutComplex</shaderType>
-            <drawSize>(2,2)</drawSize>
+            <drawSize>(2,1)</drawSize>
         </graphicData>
-        <fillPercent>0.15</fillPercent>
-        <uiIconOffset>(0,0.3)</uiIconOffset>
         <building>
             <joyKind>Gaming_RPG</joyKind>
             <isEdifice>false</isEdifice>
@@ -142,7 +137,7 @@
             <shadowData>
                 <volume>(0.45, 0.15, 0.35)</volume>
             </shadowData>
-            <texPath>Things/Building/Furniture/DMScreen</texPath>
+            <texPath>Things/Building/Furniture/EscapeRoom</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>(2,2)</drawSize>
