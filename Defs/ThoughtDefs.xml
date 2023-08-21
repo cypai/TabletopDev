@@ -40,4 +40,27 @@
         </stages>
     </ThoughtDef>
 
+    <ThoughtDef>
+        <defName>PlayedEscapeRoom</defName>
+        <thoughtClass>Thought_Memory</thoughtClass>
+        <durationDays>1.0</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>played bad escape room</label>
+                <description>That escape room was not fair!</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>played decent escape room</label>
+                <description>That was a fun escape room.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+            <li>
+                <label>played a masterpiece escape room</label>
+                <description>That was an incredible escape room!</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
 </Defs>

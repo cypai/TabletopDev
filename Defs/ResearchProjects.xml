@@ -12,4 +12,15 @@
         <researchViewY>6.75</researchViewY>
     </ResearchProjectDef>
 
+    <ResearchProjectDef>
+        <defName>EscapeRooms</defName>
+        <label>escape rooms</label>
+        <description>Create a tabletop escape room for recreational use.</description>
+        <baseCost>500</baseCost>
+        <tab>Main</tab>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>0</researchViewX>
+        <researchViewY>7.75</researchViewY>
+    </ResearchProjectDef>
+
 </Defs>

@@ -18,4 +18,19 @@
         </requiredCapacities>
     </JoyGiverDef>
 
+    <JoyGiverDef>
+        <defName>UseEscapeRoom</defName>
+        <giverClass>BoardgameDev.JoyGiver_EscapeRoom</giverClass>
+        <baseChance>5</baseChance>
+        <thingDefs>
+            <li>EscapeRoom</li>
+        </thingDefs>
+        <jobDef>PlayEscapeRoom</jobDef>
+        <joyKind>Gaming_Cerebral</joyKind>
+        <requiredCapacities>
+            <li>Sight</li>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </JoyGiverDef>
+
 </Defs>
