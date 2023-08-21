@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <JoyGiverDef>
+        <defName>UseDMScreen</defName>
+        <giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
+        <baseChance>5</baseChance>
+        <thingDefs>
+            <li>DMScreen</li>
+        </thingDefs>
+        <jobDef>UseDMScreen</jobDef>
+        <joyKind>Gaming_Cerebral</joyKind>
+        <requiredCapacities>
+            <li>Sight</li>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </JoyGiverDef>
+
+</Defs>

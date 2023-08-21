@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ResearchProjectDef>
+        <defName>TabletopRPGs</defName>
+        <label>tabletop rpgs</label>
+        <description>Create a tabletop RPG campaign for recreational use.</description>
+        <baseCost>500</baseCost>
+        <tab>Main</tab>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>0</researchViewX>
+        <researchViewY>6.75</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

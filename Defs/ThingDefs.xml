@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="FurnitureWithQualityBase">
+        <defName>RPGCampaign</defName>
+        <label>RPG campaign</label>
+        <description>A custom campaign for a tabletop RPG.</description>
+        <graphicData>
+            <shadowData>
+                <volume>(0.45, 0.15, 0.35)</volume>
+            </shadowData>
+            <texPath>Things/Building/Furniture/DMScreen</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <fillPercent>0.15</fillPercent>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,1)</interactionCellOffset>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <designationCategory>Joy</designationCategory>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <thingCategories>
+            <li>BuildingsJoy</li>
+        </thingCategories>
+        <tradeTags>
+        </tradeTags>
+        <building>
+            <joyKind>Gaming_Cerebral</joyKind>
+            <isEdifice>false</isEdifice>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+        </building>
+        <clearBuildingArea>false</clearBuildingArea>
+        <size>(1,1)</size>
+        <researchPrerequisites>
+            <li>TabletopRPGs</li>
+        </researchPrerequisites>
+        <stuffCategories>
+            <li>Woody</li>
+            <li>Fabric</li>
+            <li>Leathery</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>50</costStuffCount>
+        <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <MarketValue>150</MarketValue>
+            <Mass>7.5</Mass>
+            <JoyGainFactor>1</JoyGainFactor>
+            <WorkToBuild>5000</WorkToBuild>
+        </statBases>
+        <comps>
+        </comps>
+        <uiIconOffset>(0,0.3)</uiIconOffset>
+    </ThingDef>
+
+</Defs>
