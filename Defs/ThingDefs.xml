@@ -46,6 +46,7 @@
             <soundWorking>Recipe_Sculpt</soundWorking>
             <recipeUsers>
                 <li>CraftingSpot</li>
+                <li>TableSculpting</li>
             </recipeUsers>
             <defaultIngredientFilter>
                 <categories>
@@ -160,6 +161,7 @@
             <soundWorking>Recipe_Sculpt</soundWorking>
             <recipeUsers>
                 <li>CraftingSpot</li>
+                <li>TableSculpting</li>
             </recipeUsers>
             <defaultIngredientFilter>
                 <categories>
